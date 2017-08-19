@@ -15,8 +15,8 @@ function init()
             var newTd = document.createElement("td");
             newTd.id = "td" + (i * 11 + j).toString();
             newTd.style.border = "1.1px solid black";
-            newTd.style.height = "20px";
-            newTd.style.width = "20px";
+            //newTd.style.height = "20px";
+            //newTd.style.width = "20px";
             newTd.style.cursor = "default";
             newTd.style.textAlign = "center";
             newTd.style.color = "#676767";
@@ -73,15 +73,15 @@ function matchHint(id)
     if (id > 65) {toCheck[6] = 0; toCheck[7] = 0; toCheck[8] = 0; }
     if (id % 11 === 0) {toCheck[0] = 0; toCheck[3] = 0; toCheck[6] = 0; }
     if (id % 11 === 10) {toCheck[2] = 0; toCheck[5] = 0; toCheck[8] = 0; }
-    if ((toCheck[0] === 1) && (getTd(id-12).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[1] === 1) && (getTd(id-11).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[2] === 1) && (getTd(id-10).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[3] === 1) && (getTd(id-1).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[0] === 1) && (getTd(id - 12).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[1] === 1) && (getTd(id - 11).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[2] === 1) && (getTd(id - 10).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[3] === 1) && (getTd(id - 1).bgColor === "#ff628c")) colorCount++;
     if ((toCheck[4] === 1) && (getTd(id).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[5] === 1) && (getTd(id+1).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[6] === 1) && (getTd(id+10).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[7] === 1) && (getTd(id+11).bgColor === "#ff628c")) colorCount++;
-    if ((toCheck[8] === 1) && (getTd(id+12).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[5] === 1) && (getTd(id + 1).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[6] === 1) && (getTd(id + 10).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[7] === 1) && (getTd(id + 11).bgColor === "#ff628c")) colorCount++;
+    if ((toCheck[8] === 1) && (getTd(id + 12).bgColor === "#ff628c")) colorCount++;
     if (colorCount === hint[id])
         return true;
     else
