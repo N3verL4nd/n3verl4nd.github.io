@@ -60,9 +60,17 @@ function check()
         }
     }
     if (winFlag)
-        document.getElementById("iloveyou").innerHTML = "<p><img src='/images/heart.png' alt='heart'><a href='' target='_top'>芊漪</a></p>";
+	{
+		//document.getElementById("iloveyou").innerHTML = "<p><img src='/images/heart.png' alt='heart'><a href='' target='_top'>芊漪</a></p>";
+		document.getElementById("iloveyou").innerHTML = "<p><img src='/images/yi.jpg' alt='heart'</p>";
+		//$("img.site-author-image").attr("src","/images/avatar.jpg");
+		document.getElementsByClassName("site-author-image")[0].src = "/images/love.jpg";
+	}
     else
+	{
         document.getElementById("iloveyou").innerHTML = "&nbsp;";
+		document.getElementsByClassName("site-author-image")[0].src = "/images/sky.jpg";
+	}
 }
 
 function matchHint(id)
