@@ -307,8 +307,6 @@
     
       <div id="SOHUCS"></div>
     
-  </div>
-
 
 
         </div>
@@ -548,6 +546,23 @@
 
 
   
+  <link rel="stylesheet" href="/css/gitalk.css">
+  
+  <script src="/js/src/gitalk.min.js"></script>
+   <script type="text/javascript">
+		var gitalk = new Gitalk({
+		  clientID: '',
+		  clientSecret: '',
+		  repo: 'BlogGitalk',
+		  owner: '',
+		  admin: [''], 
+		  id: location.pathname,
+		  distractionFreeMode: 'true'
+		})
+		gitalk.render('gitalk-container')           
+       </script>
+
+
 
 
   
@@ -574,23 +589,6 @@
 
 
 
-
-
-  <link rel="stylesheet" href="/css/gitalk.css">
-  
-  <script src="/js/src/gitalk.min.js"></script>
-   <script type="text/javascript">
-		var gitalk = new Gitalk({
-		  clientID: '',
-		  clientSecret: '',
-		  repo: 'BlogGitalk',
-		  owner: '',
-		  admin: [''], 
-		  id: location.pathname,
-		  distractionFreeMode: 'true'
-		})
-		gitalk.render('gitalk-container')           
-       </script>
 
 
   
