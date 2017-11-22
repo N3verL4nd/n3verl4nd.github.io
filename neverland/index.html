@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>祝大家新年快乐!</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+
+<body onload="init()" style="margin:0px;">
+<div style="text-align: center">
+    2017年，美好的成为过去，我们取得新的成就和辉煌。<br/>
+    2018年，我们将朝着梦想之路跨越泥沼坎坷，跃然奔腾！<br/>
+    2018年既会有风雨也会有阳光，我们一路紧随必将不惧困难与挑战，为实现梦想而扎实奋斗！<br/>
+    在这其乐融融的日子里我们真挚的祝您春节快乐、阖家团圆！
+</div>
+<div style="display:none">
+    <video id="sourcevid" autoplay="true" loop="true">
+        <source src="BigBuckBunny_640x360.mp4" type="video/mp4"/>
+        <source src="BigBuckBunny_640x360.ogv" type="video/ogg"/>
+    </video>
+    <canvas id="sourcecopy" width="640" height="360"></canvas>
+</div>
+<div style="text-align: center">
+    <div style="z-index:1;position:relative;text-align:center;font-size:16px;font-weight:bold;width:1200px;top:60px;">
+        家人最开心的就是自己的孩子能和他们聊聊!
+    </div>
+    <canvas id="output" width="1000" height="600" onmousedown="dropBomb(event, this)"
+            style="border: solid 5px #666666">
+    </canvas>
+    <br/>过年回家，请把电脑放一边吧，多陪陪自己的家人！ <a href="https://n3verl4nd.github.io/">N3verL4nd</a>
+</div>
+</body>
+</html>
