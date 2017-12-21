@@ -61,9 +61,7 @@ function check()
     }
     if (winFlag)
 	{
-		//document.getElementById("iloveyou").innerHTML = "<p><img src='/images/heart.png' alt='heart'><a href='' target='_top'>芊漪</a></p>";
-		document.getElementById("iloveyou").innerHTML = "<p><img src='http://ozi1xtq8x.bkt.clouddn.com/images/heart.png' alt='heart'></p><br /><br /><br /><br /><br /><p><img src='http://ozi1xtq8x.bkt.clouddn.com/images/yi.png' alt='heart'</p>";
-		//$("img.site-author-image").attr("src","/images/avatar.jpg");
+		document.getElementById("iloveyou").innerHTML = "<p><img src='http://ozi1xtq8x.bkt.clouddn.com/images/yi.png' alt='heart' /></p>";
 		document.getElementsByClassName("site-author-image")[0].src = "http://ozi1xtq8x.bkt.clouddn.com/images/love.jpg";
 	}
     else
