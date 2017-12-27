@@ -67,7 +67,7 @@ function check()
     else
 	{
         document.getElementById("iloveyou").innerHTML = "&nbsp;";
-		//document.getElementsByClassName("site-author-image")[0].src = "http://ozi1xtq8x.bkt.clouddn.com/images/sky.jpg";
+		document.getElementsByClassName("site-author-image")[0].src = "http://ozi1xtq8x.bkt.clouddn.com/images/xiya.gif";
 	}
 }
 
