@@ -133,7 +133,7 @@
 
 
 
-</head>
+<script src="/assets/js/DPlayer.min.js"></script><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -333,23 +333,7 @@
         
           
             <script src="\assets\js\APlayer.min.js"> </script><p>在自己一无是处的时候遇到了真正喜欢的人。<br>也知道，错过就是永远失去。</p>
-<div id="aplayer0" class="aplayer" style="margin-bottom: 20px;"></div>
-		<script>
-			var ap = new APlayer({
-				element: document.getElementById("aplayer0"),
-				narrow: false,
-				autoplay: false,
-				showlrc: 0,
-				music: {
-					title: "焦安溥",
-					author: "喜欢",
-					url: "http://ozi1xtq8x.bkt.clouddn.com/music/%E5%96%9C%E6%AC%A2.mp3",
-					pic: "http://ozi1xtq8x.bkt.clouddn.com/images/%E7%84%A6%E5%AE%89%E5%82%85.jpg",
-				}
-			});
-			window.aplayers || (window.aplayers = []);
-			window.aplayers.push(ap);
-		</script>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://ozi1xtq8x.bkt.clouddn.com/video/%E7%AD%89%E4%BD%A0%E4%B8%8B%E8%AF%BE.mp4","pic":"http://ozi1xtq8x.bkt.clouddn.com/images/classcroom.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
           
         
