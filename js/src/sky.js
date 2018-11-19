@@ -61,13 +61,13 @@ function check()
     }
     if (winFlag)
 	{
-		document.getElementById("iloveyou").innerHTML = "<p><img src='http://ozi1xtq8x.bkt.clouddn.com/images/yi.png' alt='heart' /></p>";
-		document.getElementsByClassName("site-author-image")[0].src = "http://ozi1xtq8x.bkt.clouddn.com/images/love.jpg";
+		document.getElementById("iloveyou").innerHTML = "<p><img src='/images/yi.png' alt='heart' /></p>";
+		document.getElementsByClassName("site-author-image")[0].src = "/images/love.jpg";
 	}
     else
 	{
         document.getElementById("iloveyou").innerHTML = "&nbsp;";
-		document.getElementsByClassName("site-author-image")[0].src = "http://ozi1xtq8x.bkt.clouddn.com/images/xiya.gif";
+		document.getElementsByClassName("site-author-image")[0].src = "/images/xiya.gif";
 	}
 }
 
